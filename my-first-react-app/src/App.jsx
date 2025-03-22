@@ -26,6 +26,7 @@ const [debouncedSearchTerm, setDebouncedSearchTerm] = useState('');
 
 // Debounce the search term to prevent excessive API calls 
 // by waiting for the user to stop typing for 500ms.
+// Added debouncedSearchTerm as a dependency to the useEffect Lines 65-67
 useDebounce(() => {
   setDebouncedSearchTerm(searchTerm);
 }
